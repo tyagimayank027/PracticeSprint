@@ -1,6 +1,4 @@
 package com.cg.customer.ui;
-
-import org.hibernate.cache.spi.support.AbstractReadWriteAccess.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -30,13 +28,13 @@ public class CustomerMain {
 		Customer findC2 = service.findById((long) 4);
 		System.out.println("Customer id " + findC2.getId() + "And name= " + findC2.getName());
 		
-		Item chocolate = itemService.create(150.0,"choco");
-		System.out.println("Item "+chocolate.getItem()+" "+chocolate.getDescription()+" "+chocolate.getPrice()+" "
-				+chocolate.getAddedDate());
+		Item i1 = itemService.create(50.0,"Milk");
+		System.out.println("Item "+i1.getId()+" "+i1.getDescription()+" "+i1.getPrice()+" "
+				+i1.getAddedDate());
 		
-		Item rice = itemService.create(350.0, "Rice");
-		System.out.println("Item "+rice.getItem()+" "+rice.getDescription()+" "+rice.getPrice()+" "
-				+rice.getAddedDate());
+		Item i2 = itemService.create(350.0, "Toy");
+		System.out.println("Item "+i2.getId()+" "+i2.getDescription()+" "+i2.getPrice()+" "
+				+i2.getAddedDate());
 	}
 
 }
