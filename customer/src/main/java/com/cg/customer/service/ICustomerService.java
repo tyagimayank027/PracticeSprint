@@ -1,10 +1,16 @@
-package com.cg.service;
-import com.cg.entities.*;
+package com.cg.customer.service;
+
+import java.util.Set;
+
+import com.cg.customer.entities.*;
+import com.cg.items.entity.*;
 
 public interface ICustomerService {
-	
-	public Customer findById(long Id);
-    public Customer createCustomer(String name);
-    public Customer update(Long id,String name);
+	Customer findById(Long customerID);
 
+	Customer createCustomer(String name);
+
+	Customer addAmount(Long customerId, double amount);
+
+	Set<Item> itemsBoughtByCustomer(Long customerId);
 }

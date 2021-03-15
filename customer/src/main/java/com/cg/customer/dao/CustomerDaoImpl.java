@@ -1,11 +1,11 @@
-package com.cg.dao;
+package com.cg.customer.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
-import com.cg.entities.*;
+import com.cg.customer.entities.*;
 
 @Repository
 public class CustomerDaoImpl implements ICustomerDao {
@@ -20,7 +20,7 @@ public class CustomerDaoImpl implements ICustomerDao {
 	}
 
 	@Override
-	public Customer findById(long id) {
+	public Customer findById(Long id) {
 		Customer customer = em.find(Customer.class, id);
 		return customer;
 	}

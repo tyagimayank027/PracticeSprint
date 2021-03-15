@@ -1,12 +1,12 @@
-package com.cg.dao;
+package com.cg.customer.dao;
 
-import com.cg.entities.*;
+import com.cg.customer.entities.*;
 
 public interface ICustomerDao {
 	Customer add(Customer customer);
 
-    Customer findById(long id);
+	Customer findById(Long id);
 
-    Customer update(Customer customer);
+	Customer update(Customer customer);
 
 }

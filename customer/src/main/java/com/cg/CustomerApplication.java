@@ -3,7 +3,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.cg.ui.CustomerMain;
+import com.cg.customer.ui.CustomerMain;
 
 
 @SpringBootApplication
