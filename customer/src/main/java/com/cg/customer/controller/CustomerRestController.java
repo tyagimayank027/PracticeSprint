@@ -41,7 +41,9 @@ public class CustomerRestController {
 	@PutMapping("/account/amount")
 	public CustomerDetails addAmount(@RequestBody AddAmountRequest request)
 	{
-		return util.toDetail(service.addAmount(request.getId(), request.getAmount()));
+		Customer customer = service.addAmount(request.getId(), request.getAmount());
+		CustomerDetails cd=util.toDetail(customer);
+		return cd;
 	}
   
 }

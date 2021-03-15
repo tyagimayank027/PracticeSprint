@@ -17,11 +17,11 @@ public class AddAmountRequest {
 		this.id = id;
 	}
 
-	public double getBalance() {
+	public double getAmount() {
 		return balance;
 	}
 
-	public void setBalance(double balance) {
+	public void setAmount(double balance) {
 		this.balance = balance;
 	}
 
